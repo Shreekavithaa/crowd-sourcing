@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> పారుపల్లి పదజాలం </title>
+
+	<link rel="stylesheet" href="../static/demo.css">
+	<link rel="stylesheet" href="../static/form-basic.css">
+
+</head>
+
+<!--<link rel="stylesheet" href="/static/style.css" type="text/css">-->
+{% block body %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+ 
+<header>
+		<h1>పారుపల్లి పదజాలం  </h1>
+		<a href="/newword"> Add a Word</a>
+    </header>
+<br><br>
+
+
+    <div class="main-content">
+<form action="/login" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			
+ 
+			<div class="form-basic">
+				<div class="form-row"><label>
+				<span>Username</span>
+				<input type="text" class="login-field" value="" placeholder="username" name="username" required>
+				</label>
+				</div>
+ 
+				<div class="form-row"><label >
+				<span>Password </span>
+				<input type="password" class="login-field" value="" placeholder="password" name="password" required>
+				</label>
+				</div>
+ 
+                 <div class="form-row">
+                <button type="submit">Login</button>
+                <br>
+                <a href="http://www.google.com"><p align="center">Request Credentials</p></a>
+            </div>
+			    
+			</div>
+		</div>
+	</div>
+</form>
+ </body>
+
+</html>
+{% endif %}
+{% endblock %}

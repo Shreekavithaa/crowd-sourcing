@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title onclick="/home"> పారుపల్లి పదజాలం </title>
+
+	<link rel="stylesheet" href="../static/demo.css">
+	<link rel="stylesheet" href="../static/form-basic.css">
+
+</head>
+
+<!--<link rel="stylesheet" href="/static/style.css" type="text/css">-->
+
+ 
+<header>
+		<h1>పారుపల్లి పదజాలం </h1>
+    </header>
+<br><br>
+
+
+    <div class="main-content">
+<form action="/addword" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			
+ 
+			<div class="form-basic">
+
+				<div class="form-row"><label>
+				<span>Word</span>
+				<input type="text" class="login-field" value="" placeholder="Enter the word here" name="word" required>
+				</label>
+				</div>
+
+				<div class="form-row"><label>
+				<span>Gloss</span>
+				<input type="text" class="login-field" value="" placeholder="Enter the gloss here " name="gloss" required>
+				</label>
+				</div>
+
+				<div class="form-row"><label>
+				<span>Sentence</span>
+				<input type="text" class="login-field" value="" placeholder="Enter a sentence here" name="sentence">
+				</label>
+				</div>
+ 
+                 <div class="form-row">
+                <button type="submit">Add this</button>
+            </div>
+			    
+			</div>
+		</div>
+	</div>
+</form>
+ </body>
+
+</html>
+
